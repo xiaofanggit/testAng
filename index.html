@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="Angello">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    </head>
+    <body ng-controller="MainCtrl as main">
+        <div class="navbar navbar-fixedtop navbar-default">
+            <div class="navbar-header">
+                <a class="logo navbar-brand" href="#">
+                    <img src="assets/img/angello.png">
+                </a>
+            </div>
+            </div>
+        <div class="btn-group pull-right">
+            <a class="btn btn-primary" href="#/"><span class="glyphicon glyphicon-home"></span></a>
+            <a class="btn btn-primary" href="#/users"><span class="glyphicon glyphicon-user"></span></a>
+            <a class="btn btn-primary" href="#/dashboard"><span class="glyphicon glyphicon-signal"></span></a>
+        </div>
+
+        
+        <div ng-view=""></div>
+        <div class="modal"></div>
+        <div>I am here to help you!!!</div>
+        <script src="vendor/head.load.min.js"></script>
+        <script src="assets/js/boot.js"></script>
+    </body>
+</html>
